@@ -46,6 +46,13 @@ DELETE FROM Player_Info WHERE id_number = 4;
 DELETE FROM Player_Info WHERE id_number = 5;
 DELETE FROM Player_Info WHERE id_number = 6;
 
+SELECT *FROM player_info WHERE id_number = 3 AND name = 'dhoni';
+SELECT *FROM player_info WHERE id_number = 4 OR name = 'virat';
+SELECT *FROM player_info WHERE id_number IN(1,2,3,4,5);
+SELECT *FROM Player_info WHERE id_number NOT IN (2,3,4,5);
+SELECT *FROM Player_info WHERE id_number BETWEEN 2 AND 10;
+
+
 DESC Player_Info; 
 SELECT *FROM Player_Info;
 SELECT *FROM Player_Info WHERE id_number = 5 ; 
@@ -99,6 +106,13 @@ DELETE FROM fruits WHERE id_number = 8;
 DELETE FROM fruits WHERE id_number = 9;
 DELETE FROM fruits WHERE id_number = 10;
 
+SELECT *FROM fruits WHERE id_number = 6 AND name = 'orange';
+SELECT *FROM fruits WHERE id_number = 4 OR name = 'papaya';
+SELECT *FROM fruits WHERE id_number IN(1,2,3,4,5);
+SELECT *FROM fruits WHERE id_number NOT IN (2,3,4,5);
+SELECT *FROM fruits WHERE id_number BETWEEN 2 AND 10;
+
+
 DESC fruits;
 USE Fruits_Info;
 SELECT *FROM fruits;
@@ -137,6 +151,12 @@ UPDATE Ipl SET jersey_color = orange WHERE id_number = 5;
 DELETE FROM Ipl WHERE id_number = 2;
 DELETE FROM Ipl WHERE id_number = 4;
 DELETE FROM Ipl WHERE id_number = 6;
+
+SELECT *FROM Ipl WHERE id_number = 7 AND team_name = 'KKR';
+SELECT *FROM Ipl WHERE id_number = 2 OR trophies = 5;
+SELECT *FROM Ipl WHERE id_number IN(1,2,3,4,5);
+SELECT *FROM Ipl WHERE id_number NOT IN (2,3,4,5);
+SELECT *FROM Ipl WHERE id_number BETWEEN 2 AND 10;
                     
 DESC Ipl;
 SELECT *FROM Ipl; 
@@ -191,6 +211,13 @@ DELETE FROM Netflix WHERE id_number = 7;
 DELETE FROM Netflix WHERE id_number = 8;
 DELETE FROM Netflix WHERE id_number = 9;
 DELETE FROM Netflix WHERE id_number = 10;
+
+SELECT *FROM Netflix WHERE id_number = 2 AND rating = 7.6;
+SELECT *FROM Netflix WHERE id_number = 4 OR lead_name = 'Yash';
+SELECT *FROM Netflix WHERE id_number IN(1,2,3,4,5);
+SELECT *FROM Netflix WHERE id_number NOT IN (2,3,4,5);
+SELECT *FROM Netflix WHERE id_number BETWEEN 2 AND 10;
+
 
 DESC Netflix;  
 SELECT *FROM Netflix;    
